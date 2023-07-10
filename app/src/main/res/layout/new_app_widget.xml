@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.WidgetAsaka.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="158dp"
+    android:theme="@style/Theme.WidgetAsaka.AppWidgetContainer">
+
+
+    <LinearLayout
+        android:background="@drawable/bg_widget_balance"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1.3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/group"
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:src="@drawable/shape"
+                android:layout_width="80dp"
+                android:layout_height="10dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#3C000000"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:id="@+id/tv_balance"
+                android:text="Общий баланс"
+                android:textSize="10sp"
+                android:textColor="#444444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_below="@id/tv_balance"
+                android:id="@+id/overall_balance"
+                android:textColor="#000000"
+                android:text="100 000 000.12"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_alignTop="@id/overall_balance"
+                android:layout_marginStart="4dp"
+                android:layout_toRightOf="@id/overall_balance"
+                android:text="сум"
+                android:textSize="24sp"
+                android:textColor="#A6A6A6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="#3C000000"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1.3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@+id/tv_update"
+                android:textSize="10sp"
+                android:textColor="#737373"
+                android:text="Последние обновление"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/tv_update"
+                android:id="@+id/update_date"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:text="12.02.2023"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            
+            <ImageView
+                android:src="@drawable/vector"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
