@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    tools:src="@drawable/united_states"
+                    android:id="@+id/img_flag"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    tools:text="USD"
+                    android:textColor="#212121"
+                    android:textSize="14sp"
+                    android:id="@+id/name_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/name_currency_language"
+                    tools:text="Доллар"
+                    android:textSize="10sp"
+                    android:textColor="#757575"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginVertical="8dp"
+            android:background="#19000000"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:paddingStart="12dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                tools:text="Покупка"
+                android:id="@+id/tv_currency_purchase"
+                android:textSize="12sp"
+                android:textColor="#757575"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_below="@id/tv_currency_purchase"
+                android:id="@+id/money_currency_purchase"
+                tools:text="11 290.00"
+                android:textSize="13sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="4dp"
+                tools:text="UZS"
+                android:layout_toRightOf="@id/money_currency_purchase"
+                android:layout_alignBottom="@id/money_currency_purchase"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginVertical="8dp"
+            android:background="#1A000000"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:paddingStart="12dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                tools:text="Продажа"
+                android:id="@+id/tv_currency_sale"
+                android:textSize="12sp"
+                android:textColor="#757575"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_below="@id/tv_currency_sale"
+                android:id="@+id/money_currency_sale"
+                tools:text="11 290.00"
+                android:textSize="13sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="4dp"
+                tools:text="UZS"
+                android:layout_toRightOf="@id/money_currency_sale"
+                android:layout_alignBottom="@id/money_currency_sale"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:background="#19000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
