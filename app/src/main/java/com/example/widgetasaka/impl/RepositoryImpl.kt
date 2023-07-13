@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import com.example.widgetasaka.Repository
 import com.example.widgetasaka.data.AppDatabase
+import com.example.widgetasaka.data.CounterEntity
 import com.example.widgetasaka.data.CurrencyDao
 import com.example.widgetasaka.data.CurrencyEntity
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -18,16 +19,21 @@ class RepositoryImpl @Inject constructor(
 
 
     override fun insert(list: List<CurrencyEntity>) {
-        CoroutineScope(Dispatchers.IO).launch {
-            database.currencyDao().insert(list)
-            Log.d("SSS", "iiiinnnnssseeeeerrrrrttt ==== ${list.size}")
-        }
+        database.currencyDao().insert(list)
+    }
+
+    override fun insertCounter(list: List<CounterEntity>) {
+        database.counterDao().insert(list)
     }
 
     override fun getCurrency(): List<CurrencyEntity> {
         var list = database.currencyDao().getAllCurrency()
         Log.d("SSS", "reeeeepppppooooooooo ==== ${list.size}")
         return list
+    }
+
+    override fun getCounter(): List<CounterEntity> {
+        return database.counterDao().getCounter()
     }
 
 }

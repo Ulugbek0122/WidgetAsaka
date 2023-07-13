@@ -9,7 +9,7 @@
         android:orientation="horizontal"
         android:paddingHorizontal="10dp"
         android:layout_width="match_parent"
-        android:layout_height="46dp">
+        android:layout_height="60dp">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -39,9 +39,10 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:textStyle="bold"
                     tools:text="USD"
                     android:textColor="#212121"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:id="@+id/name_currency"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -74,7 +75,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                tools:text="Покупка"
+                android:text="Покупка"
                 android:id="@+id/tv_currency_purchase"
                 android:textSize="12sp"
                 android:textColor="#757575"
@@ -82,21 +83,23 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:textStyle="bold"
                 android:layout_below="@id/tv_currency_purchase"
                 android:id="@+id/money_currency_purchase"
                 tools:text="11 290.00"
-                android:textSize="13sp"
+                android:textSize="14sp"
                 android:textColor="#000000"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:textStyle="bold"
                 android:layout_marginStart="4dp"
                 tools:text="UZS"
                 android:layout_toRightOf="@id/money_currency_purchase"
                 android:layout_alignBottom="@id/money_currency_purchase"
                 android:textColor="#000000"
-                android:textSize="11sp"
+                android:textSize="13sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -116,7 +119,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                tools:text="Продажа"
+                android:text="Продажа"
                 android:id="@+id/tv_currency_sale"
                 android:textSize="12sp"
                 android:textColor="#757575"
@@ -124,21 +127,23 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:textStyle="bold"
                 android:layout_below="@id/tv_currency_sale"
                 android:id="@+id/money_currency_sale"
                 tools:text="11 290.00"
-                android:textSize="13sp"
+                android:textSize="14sp"
                 android:textColor="#000000"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:textStyle="bold"
                 android:layout_marginStart="4dp"
                 tools:text="UZS"
                 android:layout_toRightOf="@id/money_currency_sale"
                 android:layout_alignBottom="@id/money_currency_sale"
                 android:textColor="#000000"
-                android:textSize="11sp"
+                android:textSize="13sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 

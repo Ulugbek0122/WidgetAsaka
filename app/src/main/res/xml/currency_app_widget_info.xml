@@ -7,7 +7,7 @@
     android:minHeight="100dp"
     android:minResizeWidth="260dp"
     android:minResizeHeight="80dp"
-    android:previewImage="@drawable/example_appwidget_preview"
+    android:previewImage="@drawable/currency"
     android:previewLayout="@layout/currency_app_widget"
     android:resizeMode="horizontal|vertical"
     android:updatePeriodMillis="86400000"

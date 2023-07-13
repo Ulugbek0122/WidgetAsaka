@@ -17,11 +17,15 @@ class DatabaseModule {
     @Provides
     @Singleton
     fun provideLocalDb(@ApplicationContext context: Context) =
-        Room.databaseBuilder(context, AppDatabase::class.java, "db_local")
+        Room.databaseBuilder(context, AppDatabase::class.java, "local_db_a")
             .allowMainThreadQueries()
             .build()
 
     @Provides
     @Singleton
     fun provideDao(appDatabase: AppDatabase) = appDatabase.currencyDao()
+
+    @Provides
+    @Singleton
+    fun provideCounterDao(appDatabase: AppDatabase) = appDatabase.counterDao()
 }
